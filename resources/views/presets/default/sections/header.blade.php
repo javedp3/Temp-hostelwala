@@ -22,7 +22,7 @@
                                  @endforeach
                                  <li class="main-menu__menu-item">
                                      <div class="language-box ms-1">
-                                         <select class="select langSel">z
+                                         <select class="select langSel">
                                              @foreach ($languages as $language)
                                                  <option value="{{ $language->code }}"
                                                      @if (Session::get('lang') === $language->code) selected @endif>

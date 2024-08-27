@@ -17,7 +17,7 @@ Route::controller('TicketController')->prefix('ticket')->group(function () {
 Route::get('app/deposit/confirm/{hash}', 'Gateway\PaymentController@appDepositConfirm')->name('deposit.app.confirm');
 
 Route::controller('SiteController')->group(function () {
-    
+
     Route::get('/contact', 'contact')->name('contact');
 
     Route::post('/contact', 'contactSubmit');
